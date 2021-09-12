@@ -34,27 +34,44 @@ code {
   flex-wrap: wrap;
 }
 
- @media screen and (min-width: 768px){
+ @media screen and (min-width: 1100px){
   .box{
     width: 33.33%;
   }
+  .box img{
+    width: 20vw;
+    height: 23vh;
+    border: 1px solid black;
+  }
 } 
 
-@media screen and (max-width: 624px){
+@media (min-width:580px)  and (max-width: 1100px){
   .box{
     width: 50%;
+  }
+  .box img{
+    width: 30vw;
+    height: 23vh;
+    border: 1px solid black;
+  }
+} 
+
+@media screen and (max-width: 576px){
+  .box{
+    width: 100%;
+  }
+  .box img{
+    width: 80%;
+    height: 23vh;
+    border: 1px solid black;
   }
 } 
  
  
 
 .box{
-  
   height: 25vh;
   margin: 2rem auto;
+  text-align: center;
 }
 
-.box img{
-  width: 20vw;
-  height: 20vh;
-}
